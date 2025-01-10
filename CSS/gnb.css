@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.gnbwrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #000;
+}
+
+.gnbtext {
+    color: #797979;
+    /* width: 56px; */
+    font-size: 1rem;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+:hover.gnbtext {
+    color: #fff;
+}
+
+select {
+    appearance: none;
+    outline: none;
+    margin: 16px;
+}
+
+.selectdeco {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    padding: 16px;
+}
