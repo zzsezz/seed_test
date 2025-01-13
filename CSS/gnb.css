@@ -5,13 +5,16 @@ body {
   }
 
 .gnbwrap {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; */
     background-color: #000;
 }
 
-.gnbtext {
+.gnbBtn {
+    background-color: #000;
+    border: none;
+    outline: none;
     color: #797979;
     /* width: 56px; */
     font-size: 1rem;
@@ -19,17 +22,40 @@ body {
     cursor: pointer;
 }
 
-:hover.gnbtext {
+:hover.gnbBtn {
     color: #fff;
 }
+
+.gnbSub {
+    display: none;
+    width: inherit;
+    border: #000;
+}
+
+.gnbSub a:hover  {
+    background-color: #000;
+}
+
+.gnbSub a {
+    display: block;
+    text-align: center;
+}
+
+.dropDown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropDown:hover .gnbSub {
+    display: block;
+}
+
+
 
 select {
     appearance: none;
     outline: none;
     margin: 16px;
-}
-
-.selectdeco {
     background-color: transparent;
     color: #fff;
     border: none;
