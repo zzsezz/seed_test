@@ -4,39 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/gnb.css">
-    <title>gnv</title>
+    <title>nav</title>
 </head>
 <body>
     <nav class="gnbwrap">
     
         <div class="logobox"><img width="98px" height="58px" src="/png/gnblogo.png" alt="logo"></div>
-        
-        <div>
-        <div class="dropDown">
-          <button class="gnbBtn">회사소개</button>
-          <div class="gnbSub">
-           <a href="#">소개</a>
-           <a href="#">소개</a>
-           <a href="#">소개</a>
-         </div>
-        </div>
+    
+        <div class="menuflex">
+        <div id="menu">
+<!-- tab1 -->
+<div class="tab">
+        <ul>
+            <li><p class="gnbBtn">회사소개</p>
+                <ul>
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">연혁</a></li>
+                    <li><a href="#">조직도</a></li>
+                </ul>
 
-    <button class="gnbBtn">자산운용</button>
-    <div class="gnbSub">
-        <a href="#">소개</a>
-        <a href="#">소개</a>
-        <a href="#">소개</a>
-    </div>
+           </li>
+
+<!-- tab2 -->
+        <li><p class="gnbBtn">자산운용</p>
     
-    <button class="gnbBtn">운용현황</button>
-    
-    <button class="gnbBtn">뉴스룸</button>
+            <ul>
+                <li><a href="#">운용철학</a></li>
+                <li><a href="#">투자 프로세스</a></li>
+                <li><a href="#">리스크 관리</a></li>
+            </ul>
+        </li>    
+
+<!-- tab3 -->
+        <li><p class="gnbBtn">운용현황</p>
+            <ul>
+                <li><a href="#">대체투자</a></li>
+                <li><a href="#">증권</a></li>
+                <li><a href="#">멀티에셋</a></li>
+                <li><a href="#">개발사업</a></li>
+            </ul>
+        </li>       
+ <!-- tab4 -->
+        <li><p class="gnbBtn">뉴스룸</p>
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">공시정보</a></li>
+            </ul>  
+        </li> 
+            </ul>
+        </div>   
+        </div>
 
     <select class="selectdeco" name="language" id="lang">
         <option value="korean">KR</option>
         <option value="english">EN</option>
     </select>
-</div>
+    </div>
     </nav>
 </body>
-</html>0
+</html>
