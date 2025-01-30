@@ -146,6 +146,12 @@ for(let i = 0; i < gnbLi.length; i++){
 }
 
 for(let i = 0; i < gnbLi.length; i++){
+  gnbLi[i].addEventListener('mouseclick', function() {
+    subMenu[i].classList.addEventListener('active')
+  });
+}
+
+for(let i = 0; i < gnbLi.length; i++){
   gnbLi[i].addEventListener('mouseleave', function() {
     subMenu[i].classList.remove('active')
   });
