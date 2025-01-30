@@ -3,65 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/gnb.css">
+    <link rel="stylesheet" href="/CSS/nav.css">
     <title>nav</title>
 </head>
 <body>
     
-<nav>
-    <div class="logoBox">
-        <a href="#"><img width="98px" height="58px" src="/png/gnblogo.png" alt="logo"></a>
-    </div>
-        <div class="menuArea">
-            <ul class="menuTitle">
-                <li>회사소개</li>
-                <li>자산운용</li>
-                <li>운용현황</li>
-                <li>뉴스룸</li>
-            </ul>
-        </div>
-        <!-- <div>
-        <select class="selectdeco" name="language" id="lang">
-            <option value="korean">KR</option>
-            <option value="english">EN</option>
-        </select>
-        </div> -->
-</nav>
-     <div class="menuS">
-            <div class="menuSub">
-                <ul>
-                    <li><a href="#">소개</a></li>
-                    <li><a href="#">연혁</a></li>
-                    <li><a href="#">조직도</a></li>
-                </ul>
-                <!-- 회사소개 서브 -->
-                <ul>
-                    <li><a href="#">운용철학</a></li>
-                    <li><a href="#">투자 프로세스</a></li>
-                    <li><a href="#">리스크 관리</a></li>
-                </ul>
-                <!-- 자산운용 서브 -->
-                <ul>
-                    <li><a href="#">대체투자</a></li>
-                    <li><a href="#">증권</a></li>
-                    <li><a href="#">멀티에셋</a></li>
-                    <li><a href="#">개발사업</a></li>
-                </ul>
-                <!-- 운용현황 서브 -->
-                <ul>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">공시정보</a></li>
-                </ul>
-                <!-- 뉴스룸 서브 -->
-            </div>
-        </div>
-<script>
-        $('nav .menuTitle>ul>li').mouseover(function () {
-  $(this).children('ul').stop().slideDown()
-}).mouseout(function () {
-  $(this).children('ul').stop().slideUp()
-})
-</script>
+<div id="wrap">
+    <header id="headerWrap">
+    <a href="#"><img width="98px" height="58px" src="/png/gnblogo.png" alt="logo"></a>
+        <nav id="gnbWrap">
+            <ul class="gnb">
 
+                <li>
+                    <p>회사소개</p>
+                <div class="subWrap">
+                    <ul>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">운용철학</a></li>
+                        <li><a href="#">투자 프로세스</a></li>
+                        <li><a href="#">리스크 관리</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">대체투자</a></li>
+                        <li><a href="#">증권</a></li>
+                        <li><a href="#">멀티에셋</a></li>
+                        <li><a href="#">개발사업</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">공시정보</a></li>
+                    </ul>
+
+                    <div>
+                        about
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                    <p>자산운용</p>
+                <div class="subWrap">
+                    <ul>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">운용철학</a></li>
+                        <li><a href="#">투자 프로세스</a></li>
+                        <li><a href="#">리스크 관리</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">대체투자</a></li>
+                        <li><a href="#">증권</a></li>
+                        <li><a href="#">멀티에셋</a></li>
+                        <li><a href="#">개발사업</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">공시정보</a></li>
+                    </ul>
+                    <div>
+                        about
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                    <p>운용현황</p>
+                <div class="subWrap">
+                    <ul>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">운용철학</a></li>
+                        <li><a href="#">투자 프로세스</a></li>
+                        <li><a href="#">리스크 관리</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">대체투자</a></li>
+                        <li><a href="#">증권</a></li>
+                        <li><a href="#">멀티에셋</a></li>
+                        <li><a href="#">개발사업</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">공시정보</a></li>
+                    </ul>
+                    <div>
+                        about
+                    </div>
+                </div>
+                </li>
+
+                <li>
+                    <p>뉴스룸</p>
+                <div class="subWrap">
+                    <ul>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">조직도</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">운용철학</a></li>
+                        <li><a href="#">투자 프로세스</a></li>
+                        <li><a href="#">리스크 관리</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">대체투자</a></li>
+                        <li><a href="#">증권</a></li>
+                        <li><a href="#">멀티에셋</a></li>
+                        <li><a href="#">개발사업</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">공시정보</a></li>
+                    </ul>
+                    <div>
+                        notice
+                    </div>
+                </div>
+                </li>
+            </ul>
+</nav>
+</header>
+</div>
+
+<script>
+    const gnbLi = document.querySelectorAll('.gnb > li');
+const subMenu = document.querySelectorAll('.subWrap');
+
+for(let i = 0; i < gnbLi.length; i++){
+  gnbLi[i].addEventListener('mouseover', function() {
+    subMenu[i].classList.add('active');
+  });
+}
+
+for(let i = 0; i < gnbLi.length; i++){
+  gnbLi[i].addEventListener('mouseleave', function() {
+    subMenu[i].classList.remove('active')
+  });
+}
+</script>
 </body>
 </html>
