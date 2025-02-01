@@ -14,6 +14,12 @@ a {
     text-decoration: none;
 }
 
+.menuDisc {
+    display: flex;
+    align-items: flex-end;
+    font-size: 24px;
+    margin-left: 91px;
+}
 
 #headerWrap {
     position: absolute;
@@ -22,8 +28,14 @@ a {
     background-color: #000;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 24px 40px 0px;
+}
+
+.logomenuWrap {
+    display: flex;
+    align-items: center;
 }
 
 .gnb {
@@ -42,6 +54,8 @@ a {
 
 #gnbWrap .gnb > li {
     display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
     text-align: center;
     cursor: pointer;
     color: #767676;
@@ -67,14 +81,14 @@ a {
 }
 
 .subWrap { 
-    /* z-index: 1; */
+    z-index: 1;
     opacity: 0;  /** 나중에 0으로 **/
     position: absolute;
     display: flex;
-    /* flex-direction: row; */
-    width: 77px;
-    padding-top: 40px;
-    padding-left: 264px;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    width: auto;
+    padding: 40px 40px 16px 200px ;
     top: 98px;
     left: 0;
     width: 100%;
@@ -89,7 +103,7 @@ a {
 }
 
 .subWrap.active {
-    /* z-index: -1; */
+    display: flex;
     opacity: 1;
     /* height: auto; */
     /* top: 0; */
@@ -97,25 +111,16 @@ a {
 }
 
 .subWrap > ul {
-    /* max-width: 900px; */
-    width: 77px;
-    /* margin: 0 auto; */
-    display: flex;
-    padding-right: 72px;
     flex-direction: column;
-    top: 0;
-}
-
-.tab {
-    display: flex;
     width: 77px;
-
-    
 }
+
+
 .subWrap > ul > li > a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding-bottom:  24px;
-    width: 77px;
+    width: auto;
     color: #797979;
     font-size: 14px;
     transition: all .3s;
@@ -129,6 +134,28 @@ a {
     }
 }
 
+
 .subWrap > ul > li > a:hover {
     opacity: 1;
+}
+
+.langBtn {
+    display: flex;
+    flex-direction: row;
+    color: #797979;
+    font-size: 14px;
+    padding: 8px;
+}
+
+.langText {
+    padding: 0 8px;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+    }
+
+    &:focus {
+        color: #fff;
+    }
 }
